@@ -1,0 +1,65 @@
+{
+  "name": "haydigo-scan-solution",
+  "version": "1.0.18",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "run:bhenav": "react-native run-ios --device \"Bhenav\"",
+    "run:iphone6": "react-native run-ios --simulator \"iPhone 6\"",
+    "run:iphone6s": "react-native run-ios --simulator \"iPhone 6s\"",
+    "run:iphone7": "react-native run-ios --simulator \"iPhone 7\"",
+    "run:iphone8": "react-native run-ios --simulator \"iPhone 8\"",
+    "postinstall": "node lightbox-modal-bug.js"
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "color": "^3.1.0",
+    "immutability-helper": "^2.9.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.23.0",
+    "prop-types": "^15.6.2",
+    "react": "16.6.3",
+    "react-native": "0.57.8",
+    "react-native-actionsheet": "^2.4.2",
+    "react-native-animatable": "^1.3.1",
+    "react-native-camera": "^1.9.1",
+    "react-native-datepicker": "^1.7.2",
+    "react-native-device-info": "^0.26.2",
+    "react-native-drawer-layout": "^2.0.0",
+    "react-native-flags": "^1.0.0",
+    "react-native-keyevent": "git+https://github.com/kevinejohn/react-native-keyevent.git",
+    "react-native-lightbox": "^0.8.0",
+    "react-native-material-textfield": "^0.12.0",
+    "react-native-material-ui": "^1.30.1",
+    "react-native-permissions": "^1.1.1",
+    "react-native-picker-select": "^5.2.1",
+    "react-native-progress": "^3.5.0",
+    "react-native-prompt-android": "^0.3.4",
+    "react-native-scrollable-tab-view": "^0.10.0",
+    "react-native-snap-carousel": "^3.7.5",
+    "react-native-user-inactivity": "^0.1.3-next",
+    "react-native-vector-icons": "^6.1.0",
+    "react-navigation": "^2.9.0",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.7",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "rxjs": "^6.3.3"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.51.1",
+    "react-test-renderer": "16.6.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
